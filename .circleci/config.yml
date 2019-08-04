@@ -11,4 +11,4 @@ jobs:
             command: |
              cd ~/project
              sudo npm install -g serverless
-             serveless deploy
+             serverless deploy
