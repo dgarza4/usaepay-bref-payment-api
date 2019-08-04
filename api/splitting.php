@@ -1,5 +1,5 @@
 <?php
-  include_once './initialize.php';
+  include_once dirname(__FILE__).'/initialize.php';
 
   $tran->addcustomer='yes';
   $tran->exp='0000';

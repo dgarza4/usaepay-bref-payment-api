@@ -1,5 +1,5 @@
 <?php
-  include_once './initialize.php';
+  include_once dirname(__FILE__).'/initialize.php';
 
   $tran->command='cc:save';
   $tran->savecard=true;
