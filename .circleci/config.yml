@@ -10,5 +10,5 @@ jobs:
             name: "Build Api on lambda"
             command: |
              cd ~/project
-             npm install -g serverless
+             sudo npm install -g serverless
              serveless deploy
