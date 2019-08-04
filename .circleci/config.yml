@@ -1,0 +1,12 @@
+version: 2
+jobs:
+    build:
+      working_directory: ~/project
+      docker:
+        - image: circleci/node:10
+        - run:
+            name: "Build Api on lambda"
+            command: |
+             cd ~/project
+             npm install -g serverless
+             serverless deploy
