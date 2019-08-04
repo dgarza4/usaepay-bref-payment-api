@@ -3,7 +3,7 @@ jobs:
     build:
       working_directory: ~/project
       docker:
-        - image: circleci/node:10
+        - image: circleci/php:7.3-node
       steps:
         - checkout
         - run:
@@ -11,4 +11,5 @@ jobs:
             command: |
              cd ~/project
              sudo npm install -g serverless
+             composer install
              serverless deploy
