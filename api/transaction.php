@@ -10,6 +10,7 @@
     echo json_encode(array(
       "message" => "Card Approved",
       "Authcode" => $tran->authcode,
+      "TransactionID" => $tran->refnum,
       "AVS Result" => $tran->avs_result,
     ));
   } else {
