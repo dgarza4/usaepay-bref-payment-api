@@ -27,8 +27,10 @@ function getUserIp()
   $tran=new umTransaction;
   $data = json_decode(file_get_contents("php://input"));
 
-  $tran->key=$data->key; // source key
-  $tran->pin=$data->pin; // source key pin
+  foreach($data as $key => $val) {
+    $tran->{$key} => $val;
+  }
+  
   $tran->usesandbox=false; // Sandbox true/false
 
   $tran->ip=getUserIp(); // This allows fraud blocking on the customers ip address 

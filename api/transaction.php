@@ -2,9 +2,7 @@
   include_once dirname(__FILE__).'/initialize.php';
 
   $tran->card = $data->token;
-  $tran->amount=$data->amount;
-  $tran->invoice=$data->invoice;
-
+  
   $tran->exp='0000';
 
   if($tran->Process()) {

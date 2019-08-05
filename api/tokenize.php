@@ -4,9 +4,6 @@
   $tran->command='cc:save';
   $tran->savecard=true;
 
-  $tran->card=$data->card;
-  $tran->exp=$data->exp;
-
   if($tran->Process()) {
     http_response_code(201);
     echo json_encode(array(
