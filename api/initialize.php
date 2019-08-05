@@ -28,7 +28,7 @@ function getUserIp()
   $data = json_decode(file_get_contents("php://input"));
 
   foreach($data as $key => $val) {
-    $tran->{$key} => $val;
+    $tran->{$key} = $val;
   }
   
   $tran->usesandbox=false; // Sandbox true/false
